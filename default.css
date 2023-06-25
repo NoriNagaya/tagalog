@@ -1,31 +1,24 @@
 body{
-	color: #191970;
-	background: #FEFFFB;
-	font-style: normal;
-	font-weight: normal;
+	color: #2F3C7E;
+	background: #FBEAEB;
 	font-family: "游ゴシック", "メイリオ", "ヒラギノ角ゴシック ProN", Arial, Sans-serif, "Times New Roman";
-	font-size: 15pt;
 	text-align: left;
-	line-height:1.3em;
+	line-height:1.5em;
 	margin: 1em;
+	padding: 1em;
 	}
 
 h1{
-	width:100%;
-	margin: 0em;
-	padding-top:0.5em;
-	padding-bottom:0.5em;
+	margin-top: 0em;
 	text-align: center;
 	}
 
 p{
-	padding: 0em 3em 0em 3em;
 	text-indent: 1em;
 }
 
 
 ul{
-	margin: 0em 3em 0em 3em;
 	text-indent: 1em;
 	}
 
