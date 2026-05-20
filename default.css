@@ -1,68 +1,103 @@
-body{
-	color: #2F3C7E;
-	background: #FBEAEB;
+/* ============================================================
+   タガログ語を学ぶ人のために — Custom Stylesheet
+   Naonori Nagaya, University of Tokyo
+   Accessible palette based on Okabe-Ito (2008),
+   designed for readability and color-blind friendliness.
+
+   Key colors:
+     #0072B2  Okabe-Ito Blue      — headings, links, structure
+     #E69F00  Okabe-Ito Orange    — accents (readable by all CVD types)
+     #F8F6F2  Warm off-white      — body background (softer than pure white)
+     #2B2B2B  Soft black          — body text (less harsh than #000)
+   ============================================================ */
+
+body {
+	color: #2B2B2B;
+	background: #F8F6F2;
 	font-family: "游ゴシック", "メイリオ", "ヒラギノ角ゴシック ProN", Arial, Sans-serif, "Times New Roman";
 	text-align: left;
-	line-height:1.5em;
+	line-height: 1.5em;
 	margin: 2em;
 	padding: 1em;
-	}
-
-h1{
-	margin-top: 0em;
-	text-align: center;
-	}
-
-p{
-	text-indent: 1em;
-	margin-top:1.5em;
-	margin-bottom:1.5em;
+	border-top: 5px solid #0072B2;
 }
 
+h1 {
+	margin-top: 0em;
+	text-align: center;
+	color: #0072B2;
+	border-bottom: 3px solid #E69F00;
+	padding-bottom: 0.4em;
+}
 
-ul{
+h2 {
+	color: #0072B2;
+	border-left: 6px solid #E69F00;
+	padding-left: 0.5em;
+	margin-top: 1.8em;
+}
+
+h3 {
+	color: #2B2B2B;
+	border-bottom: 1px solid #E69F00;
+	padding-bottom: 0.2em;
+}
+
+p {
 	text-indent: 1em;
-	}
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
 
-address{
+ul {
+	text-indent: 1em;
+}
+
+address {
 	text-align: right;
 	font-size: 12pt;
 	margin-bottom: 0.3em;
 	margin-right: 0.5em;
 }
 
-
-a{
-	color: blue;
-	text-decoration: none;
-	}
-
-a:link{
-	color: blue;
-	text-decoration: none;
-	}
-
-a:visited{
-	color: blue;
-	text-decoration: none;
-	}
-
-a:active{
-	color: blue;
+/* Links use underline at all times — color alone should never
+   be the only indicator of a link (WCAG 1.4.1).             */
+a {
+	color: #0072B2;
 	text-decoration: underline;
-	}
+}
 
-a:hover{
-	color: red;
-	background: #ffcccc;
+a:link {
+	color: #0072B2;
 	text-decoration: underline;
-	}
+}
 
+a:visited {
+	color: #005A8F;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #004070;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #004070;
+	background: #FFF3D6;
+	text-decoration: underline;
+}
 
 blockquote {
-	background: #f5f5f5;
-	border-left: 10px solid #ccc;
+	background: #EEF5FB;
+	border-left: 10px solid #0072B2;
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
 	quotes: "\201C""\201D""\2018""\2019";
-	}
+}
+
+hr {
+	border: none;
+	border-top: 2px solid #E69F00;
+	margin: 2em 0;
+}
